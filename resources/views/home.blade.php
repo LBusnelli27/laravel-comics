@@ -1,7 +1,17 @@
 @extends('layouts.base')
 
 @section('header')
-    <h1>Ciao sono nell'header</h1>
+    @php
+        $navbar = ['Characters', 'Comics', 'Movies', 'Games', 'Tv', 'Collectibles', 'Videos', 'Fans', 'News', 'Shop'];
+    @endphp
+    
+    <ul>
+        @foreach ($navbar as $element)
+            <li>
+                {{ $element }}
+            </li>
+        @endforeach
+    </ul>
 @endsection
 
 
