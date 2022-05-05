@@ -1,3 +1,29 @@
-h1 {
-  color: red;
+/* RESET */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header nav img {
+  margin: 1.5rem 3rem;
+}
+header nav ul .nav-element {
+  display: inline;
+  margin: 0 1rem;
+}
+header nav ul .nav-element a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+header nav ul .nav-element :hover {
+  color: #0282f9;
 }

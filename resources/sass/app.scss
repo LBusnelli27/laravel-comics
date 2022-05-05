@@ -1,4 +1,36 @@
 //
-h1 {
-    color: red;
+@import "../sass/partials/variables";
+/* RESET */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+header {
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            margin: 1.5rem 3rem;
+        }
+        ul {
+            .nav-element {
+                display: inline;
+                margin: 0 1rem;
+                a {
+                    text-decoration: none;
+                    color: black;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                }
+                :hover {
+                    color: $mainColor;
+                }
+            }
+        }
+    }
 }
