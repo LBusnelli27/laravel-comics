@@ -27,3 +27,86 @@ header nav ul .nav-element a {
 header nav ul .nav-element :hover {
   color: #0282f9;
 }
+
+.main .comics-container {
+  position: relative;
+  padding: 2rem 0;
+  background-color: #1c1c1c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main .comics-container .tag-current {
+  position: absolute;
+  top: -30px;
+  left: 9%;
+  background-color: #0282f9;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  padding: 0.8rem 2rem;
+  font-weight: 600;
+  border: none;
+}
+.main .comics-container .comics-library-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 2rem 0;
+}
+.main .comics-container .comics-library-container .comic-card {
+  width: calc(16.6666666667% - 1.5rem);
+}
+.main .comics-container .comics-library-container .comic-card img {
+  width: 100%;
+}
+.main .comics-container .comics-library-container .comic-card p {
+  font-weight: 400;
+  color: white;
+  text-transform: uppercase;
+  width: 100%;
+}
+.main .comics-container button {
+  background-color: #0282f9;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  padding: 0.8rem 2rem;
+  font-weight: 600;
+  border: none;
+}
+.main .comics-container button:hover {
+  transform: scale(1.05);
+}
+.main .comics-buy-container {
+  background-color: #0282f9;
+}
+.main .comics-buy-container .div-container-element {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.main .comics-buy-container .div-container-element .element-comics-buy {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+.main .comics-buy-container .div-container-element .element-comics-buy:hover {
+  transform: scale(1.05);
+}
+.main .comics-buy-container .div-container-element .element-comics-buy p {
+  padding-left: 0.5rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+}
+.main .comics-buy-container .div-container-element .element-comics-buy img {
+  width: 50px;
+  height: 60px;
+}

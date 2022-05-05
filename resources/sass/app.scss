@@ -34,3 +34,87 @@ header {
         }
     }
 }
+
+.main {
+    .comics-container {
+        position: relative;
+        padding: 2rem 0;
+        background-color: $bgBlack;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .tag-current {
+            position: absolute;
+            top: -30px;
+            left: 9%;
+            background-color: $mainColor;
+            color: white;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            padding: .8rem 2rem;
+            font-weight: 600;
+            border: none ;
+        }
+        .comics-library-container {
+            @include withWebsite;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            padding: 2rem 0;
+            .comic-card {
+                width: calc((100% / 6) - 1.5rem);
+                img {
+                    width: 100%;
+                }
+                p {
+                    font-weight: 400;
+                    color: white;
+                    text-transform: uppercase;
+                    width: 100%;
+                }
+            }
+        }
+        button {
+            background-color: $mainColor;
+            color: white;
+            text-transform: uppercase;
+            font-size: .8rem;
+            padding: .8rem 2rem;
+            font-weight: 600;
+            border: none ;
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+    
+    .comics-buy-container {
+        background-color: $mainColor;
+        .div-container-element {
+            @include withWebsite;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            .element-comics-buy {
+                display: flex;
+                align-items: center;
+                padding: 1rem;
+                &:hover {
+                    transform: scale(1.05);
+                }
+                p {
+                    padding-left: .5rem;
+                    font-size: .7rem;
+                    font-weight: 700;
+                    color: white;
+                    text-transform: uppercase;
+                }
+                img {
+                    width: 50px;
+                    height: 60px;
+                }
+            }
+        } 
+    }
+}

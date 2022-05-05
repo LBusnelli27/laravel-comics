@@ -1,3 +1,15 @@
 $mainColor : #0282f9;
 $bgBlack : #1c1c1c;
 $bgDarkGray : #303030;
+
+
+@mixin centerContentInDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin withWebsite {
+    width: 80%;
+    margin: 0 auto;
+}

@@ -15,5 +15,5 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {
-    return view('guests.home');
+    return view('guests.home', ["comicsElements" => config("comics")], ["navBuyElements" => config("navBuy")] );
 });
