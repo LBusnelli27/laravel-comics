@@ -35,6 +35,8 @@ header {
     }
 }
 
+
+
 .main {
     .comics-container {
         position: relative;
@@ -117,5 +119,47 @@ header {
                 }
             }
         } 
+    }
+}
+
+
+
+.footer {
+    position: relative;
+    height: 50vh;
+    background-image: url('/images/footer-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    .top-part-footer {
+        padding: 3rem 0;
+        .footer-container-list {
+            @include withWebsite;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .list-side-footer {
+            display: flex;
+            gap: 4rem;
+            h2 {
+                margin-top: 1rem;
+                margin-bottom: .7rem;
+                text-transform: uppercase;
+            }
+            li {
+                margin-bottom: .4rem;
+                a {
+                color: #c8cdce;
+                font-weight: 200;
+                &:hover {
+                color: white;
+                }
+            }
+            }
+            }
+            img {
+            height: 350px;
+            }
+        }
     }
 }

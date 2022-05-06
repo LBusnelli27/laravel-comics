@@ -111,3 +111,44 @@ header nav ul .nav-element :hover {
   height: 60px;
   color: white;
 }
+
+.footer {
+  position: relative;
+  height: 50vh;
+  background-image: url("/images/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footer .top-part-footer {
+  padding: 3rem 0;
+}
+.footer .top-part-footer .footer-container-list {
+  width: 80%;
+  margin: 0 auto;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .top-part-footer .footer-container-list .list-side-footer {
+  display: flex;
+  gap: 4rem;
+}
+.footer .top-part-footer .footer-container-list .list-side-footer h2 {
+  margin-top: 1rem;
+  margin-bottom: 0.7rem;
+  text-transform: uppercase;
+}
+.footer .top-part-footer .footer-container-list .list-side-footer li {
+  margin-bottom: 0.4rem;
+}
+.footer .top-part-footer .footer-container-list .list-side-footer li a {
+  color: #c8cdce;
+  font-weight: 200;
+}
+.footer .top-part-footer .footer-container-list .list-side-footer li a:hover {
+  color: white;
+}
+.footer .top-part-footer .footer-container-list img {
+  height: 350px;
+}
