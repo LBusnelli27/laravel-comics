@@ -28,7 +28,7 @@
     </main>
 
 
-    @include('partials.footer', ['footerDcElements' => config('footerDc')], ['footerDcComicsElements' => config('footerDcComics')])
+    @include('partials.footer', ['footerDcElements' => config('footerDc'), 'footerDcComicsElements' => config('footerDcComics'), 'footerSocialsElements' => config('footerSocials')])
 </body>
 
 </html>

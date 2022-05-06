@@ -162,4 +162,33 @@ header {
             }
         }
     }
+    .bottom-part-footer {
+        width: 100%;
+        background-color: $bgDarkGray;
+        position: absolute;
+        bottom: 0;
+        .container-bottom-footer{
+            @include withWebsite;
+            padding: 2rem 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .sing-up-footer {
+                button {
+                background-color: inherit;
+                color: white;
+                text-transform: uppercase;
+                font-size: 1rem;
+                padding: 1rem;
+                font-weight: 600;
+                border: 2px solid $mainColor;
+                }
+            }
+            .socials-footer {
+                display: flex;
+                gap: .7rem;
+                color: $mainColor;
+            }
+        }
+    }
 }
