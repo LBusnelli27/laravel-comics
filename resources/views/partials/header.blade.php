@@ -1,7 +1,7 @@
 <header>
     <div>
         <nav>
-            <img src="{{ asset("images/dc-logo.png") }}" alt="Header DC Logo">
+            <img src="{{ asset('images/dc-logo.png') }}" alt="Header DC Logo">
             <ul>
                 @foreach ($headerElements as $element)
                     <li class="nav-element">
