@@ -112,6 +112,37 @@ header nav ul .nav-element :hover {
   color: white;
 }
 
+.container-sigle-comic {
+  width: 80%;
+  margin: 0 auto;
+}
+.container-sigle-comic .single-comic-presentation {
+  width: 100%;
+}
+.container-sigle-comic .single-comic-presentation .container-single-image {
+  display: flex;
+  justify-content: center;
+}
+.container-sigle-comic .single-comic-presentation .container-single-image img {
+  display: flex;
+  justify-content: center;
+  width: 20rem;
+}
+.container-sigle-comic .single-comic-presentation h1 {
+  color: #0282f9;
+}
+.container-sigle-comic .single-comic-presentation .single-container-price {
+  display: flex;
+  justify-content: space-between;
+  height: 5rem;
+  padding: 2rem;
+  background-color: #55ba59;
+  color: white;
+}
+.container-sigle-comic .single-comic-presentation p {
+  padding: 2rem 0;
+}
+
 .footer {
   position: relative;
   height: 50vh;

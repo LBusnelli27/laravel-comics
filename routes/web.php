@@ -17,3 +17,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('guests.home', ["comicsElements" => config("comics")], ["navBuyElements" => config("navBuy")] );
 });
+
+Route::get('/{id}', function ($id) {
+    $comicsList = config("comics");
+
+    if (is_numeric($id) && $id <= count($comicsList)) {
+        return view('guests.comicDetail', ["comic" => $comicsList[$id]]);
+    } else {
+        abort(404);
+    }
+});
