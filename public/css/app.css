@@ -59,7 +59,7 @@ header nav ul .nav-element :hover {
 .main .comics-container .comics-library-container .comic-card {
   width: calc(16.6666666667% - 1.5rem);
 }
-.main .comics-container .comics-library-container .comic-card img {
+.main .comics-container .comics-library-container .comic-card a img {
   width: 100%;
 }
 .main .comics-container .comics-library-container .comic-card p {
@@ -115,6 +115,7 @@ header nav ul .nav-element :hover {
 .container-sigle-comic {
   width: 80%;
   margin: 0 auto;
+  margin-bottom: 5rem;
 }
 .container-sigle-comic .single-comic-presentation {
   width: 100%;
@@ -141,6 +142,30 @@ header nav ul .nav-element :hover {
 }
 .container-sigle-comic .single-comic-presentation p {
   padding: 2rem 0;
+}
+.container-sigle-comic .single-comic-specs {
+  display: flex;
+  gap: 3rem;
+}
+.container-sigle-comic .single-comic-specs h2 {
+  margin-bottom: 1.3rem;
+}
+.container-sigle-comic .single-comic-specs span {
+  margin: 0.5rem;
+}
+.container-sigle-comic .single-comic-specs .comic-talent-spec {
+  width: 50%;
+}
+.container-sigle-comic .single-comic-specs .comic-talent-spec .single-comic-artist {
+  display: flex;
+  justify-content: space-between;
+}
+.container-sigle-comic .single-comic-specs .comic-talent-spec .single-comic-writer {
+  display: flex;
+  justify-content: space-between;
+}
+.container-sigle-comic .single-comic-specs .comic-spec {
+  width: 50%;
 }
 
 .footer {

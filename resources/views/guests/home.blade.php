@@ -7,9 +7,9 @@
         <div class="comics-container">
             <div class="tag-current">Current Series</div>
             <div class="comics-library-container">
-                @foreach ($comicsElements as $comic)
+                @foreach ($comicsElements as $index => $comic)
                     <div class="comic-card">
-                        <img src="{{ $comic['thumb'] }}" alt="{{ $comic['series'] }}">
+                        <a href="{{ url("/$index") }}"><img src="{{ $comic['thumb'] }}" alt="{{ $comic['series'] }}"></a>
                         <p>{{ $comic['series'] }}</p>
                     </div>
                 @endforeach

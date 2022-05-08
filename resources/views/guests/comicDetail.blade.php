@@ -19,18 +19,37 @@
             <div class="comic-talent-spec">
                 <h2>Talent</h2>
                 <div class="single-comic-artist">
-                    <span></span>
-                    <span></span>
+                    <span>Art by:</span>
+                    <span>
+                        @foreach ($comic['artists'] as $artist)
+                            {{ $artist }}, 
+                        @endforeach
+                    </span>
                 </div>
                 <div class="single-comic-writer">
-                    <span></span>
-                    <span></span>
+                    <span>Written by:</span>
+                    <span>
+                        @foreach ($comic['writers'] as $writer)
+                            {{ $writer }}, 
+                        @endforeach
+                    </span>
                 </div>
             </div>
             <div class="comic-spec">
-
+                <h2>Specs</h2>
+                <div>
+                    <span>Series:</span>
+                    <span>{{ $comic['series'] }}</span>
+                </div>
+                <div>
+                    <span>U.S. Price:</span>
+                    <span>{{ $comic['price'] }}</span>
+                </div>
+                <div>
+                    <span>On Sale Date:</span>
+                    <span>{{ $comic['sale_date'] }}</span>
+                </div>
             </div>
         </div>
-        @dump($comic)
     </div>
 @endsection

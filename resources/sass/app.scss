@@ -65,9 +65,12 @@ header {
             padding: 2rem 0;
             .comic-card {
                 width: calc((100% / 6) - 1.5rem);
-                img {
-                    width: 100%;
+                a {
+                    img {
+                        width: 100%;
+                    }
                 }
+                
                 p {
                     font-weight: 400;
                     color: white;
@@ -126,6 +129,7 @@ header {
 
 .container-sigle-comic {
     @include withWebsite;
+    margin-bottom: 5rem;
     .single-comic-presentation {
         width: 100%;
         .container-single-image {
@@ -150,6 +154,30 @@ header {
         }
         p {
             padding: 2rem 0;
+        }
+    }
+    .single-comic-specs {
+        display: flex;
+        gap: 3rem;
+        h2 {
+            margin-bottom: 1.3rem;
+        }
+        span {
+            margin: .5rem;
+        }
+        .comic-talent-spec {
+            width: 50%;
+            .single-comic-artist {
+                display: flex;
+                justify-content: space-between;
+            }
+            .single-comic-writer {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        .comic-spec {
+            width: 50%;
         }
     }
 }
